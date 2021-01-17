@@ -1,0 +1,14 @@
+<div class="card mb-2">
+  <div class="card-body">
+    <h5 class="card-title">{{ jokes.question }}</h5>
+    <h6 *ngIf="showAnswer" class="card-subtitle mb-4 text-muted">
+      {{ jokes.answer }}
+    </h6>
+    <button class="btn btn-primary mr-2" (click)="showAnswer = !showAnswer">
+      {{!showAnswer ? 'Tell me' : 'Hide answer'}}
+    </button>
+    <button (click)="deleteJoke()" class="btn btn-warning">
+      Delete
+    </button>
+  </div>
+</div>
