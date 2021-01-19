@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Joke } from '../models/joke.model';
 
 @Component({
   selector: 'app-jokes-form',
@@ -8,7 +7,6 @@ import { Joke } from '../models/joke.model';
 })
 
 export class JokesFormComponent {
-  @Input() jokes: Joke[];
   @Input() inputValue: {
     question: string,
     answer: string,
